@@ -65,6 +65,19 @@ class BandForm extends Component {
           value={this.state.year}
           onChange={this.handleInputChange}
         />
+        <label htmlFor='rating'>Rating:</label>
+        <select
+          name='rating'
+          id='rating'
+          value={this.state.rating}
+          onChange={this.handleInputChange}
+        >
+        <option value='Great'>😄</option>
+        <option value='Good'>🙂</option>
+        <option value='Unsure'>🤔</option>
+        <option value='Average'>😐</option>
+        <option value='Ok'>😕</option>
+        </select>
         <input type='submit' value='Add' />
       </form>
     )
